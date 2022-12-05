@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+</head>
+<body>
+    <script>
+        var supermanObj = {
+            id: "1a2b3c",
+            name: "Superman",
+            age: 200,
+            favorites: [
+                "coding",
+                "reading",
+                {
+                    sports: ["parkour", "hill climbing"]
+                }
+            ],
+            address: {
+                street: "Planet Krypton",
+                zipCode: 54213
+            }
+        };
+
+        console.log(supermanObj.name);
+        console.log(supermanObj.age);
+        console.log(supermanObj.favorites[0]);
+        console.log(supermanObj.favorites[2].sports);
+        console.log(supermanObj.favorites[2].sports[0]);
+        console.log(supermanObj.address);
+        console.log(supermanObj.address.zipCode);
+
+        //mengubah name
+        supermanObj.name = "rijal";
+        console.log(supermanObj.name);
+
+        //mengubah index pertama dari favorites
+        supermanObj.favorites[0] = "tidur";
+        console.log(supermanObj.favorites[0]);
+
+        //menambah key dan value pada array
+        supermanObj.favorites[3] = "belajar";
+        console.log(supermanObj.favorites);
+
+        //menambah key dan value pada object
+        supermanObj.address.coordinate = 11.1234;
+        console.log(supermanObj.address);
+
+    </script>
+</body>
+</html>

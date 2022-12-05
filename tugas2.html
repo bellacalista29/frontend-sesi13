@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas 2</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container text-center justify-content-center align-items-center flex-column" id="contentContainer">
+        <div class="row" id="rowContent">
+
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.js"
+        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <script>
+        var pesertaCodingClass = [
+            {
+                nama: 'Popi',
+                background: 'IT',
+                jenis_kelamin: 'Perempuan',
+                photo: 'https://www.clipartkey.com/mpngs/m/124-1245362_kartun-muslimah.png',
+                hobby: ['bersepeda', 'bucin']
+            },
+            {
+                nama: 'Rijal',
+                background: 'IT',
+                jenis_kelamin: 'Laki-laki',
+                photo: 'https://png.pngtree.com/png-clipart/20190115/ourlarge/pngtree-chibi-boy-with-glasses-png-image_318105.jpg',
+                hobby: ['gaming', 'coding']
+            },
+            {
+                nama: 'Dhimas',
+                background: 'IT',
+                jenis_kelamin: 'Laki-laki',
+                photo: 'https://png.pngtree.com/png-vector/20220124/ourlarge/pngtree-brown-skin-cartoon-character-foreigner-cartoon-png-image_4261571.png',
+                hobby: ['sebat', 'nonton']
+            },
+            {
+                nama: 'Akri',
+                background: 'IT',
+                jenis_kelamin: 'Laki-laki',
+                photo: 'https://img2.pngdownload.id/20181201/rjf/kisspng-animated-cartoon-clip-art-boy-image-5c030655779035.3217377215437021014897.jpg',
+                hobby: ['bersin', 'jatuh']
+            }
+        ];
+
+        pesertaCodingClass.forEach((val, item) => {
+            $("#rowContent").append(
+                `<div class="col-6 justify-content-center align-items-center text-center d-flex">
+                    <div class="card justify-content-center align-items-center text-center d-flex mt-3 mb-3" style="width: 15rem; background-color: lavender;">
+                    <img src='${val.photo}' class="card-img-top" alt="..." width = 100px height = 150px>
+                        <div class="card-body">
+                            <h5 class="card-title">${val.nama}</h5>
+                            <p class="card-text">Background : ${val.background}</p>
+                            <p class="card-text">Jenis Kelamin : ${val.jenis_kelamin}</p>
+                            <p class="card-text">Hobi : ${val.hobby}</p>
+                        </div>
+                    </div>                
+                </div><br>`
+            )
+        })
+
+
+    </script>
+</body>
+
+</body>
+
+</html>
